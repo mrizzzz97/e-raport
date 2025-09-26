@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-repoet</title>
-    <link rel="shortcut icon" href="https://idn-static-assets.s3-ap-southeast-1.amazonaws.com/school/10347.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="asset/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Report</title>
+  <link rel="shortcut icon" href="https://idn-static-assets.s3-ap-southeast-1.amazonaws.com/school/10347.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="asset/style.css">
 </head>
 <body>
-    <!-- navbar -->
-     <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
-        <div class="container">
-                <a class="navbar-brand d-felx align-items gap-2" href="#">
-                    <img src="https://idn-static-assets.s3-ap-southeast-1.amazonaws.com/school/10347.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
-                    <span class="fw-bold text-primary">E-Report</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Pricing</a>
-                    </li>
-                </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 navbar-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="https://idn-static-assets.s3-ap-southeast-1.amazonaws.com/school/10347.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
+        <span class="fw-bold text-primary">E-Report</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="py-5">
+    <div class="container">
+      <div class="hero row flex-nowrap align-items-center justify-content-between flex-column gap-5 flex-md-row gap-md-0">
+        
+        <!-- Hero Text -->
+        <div class="col text-center text-md-start">
+          <h1 class="fw-bold">
+            Selamat Datang <br>
+            di Aplikasi <span class="text-primary">IDN E-Report 2025</span> <br>
+            Forum Pengaduan
+          </h1>
+          <p class="lh-lg mt-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio beatae veritatis aliquid nemo nobis. Mollitia repellat magnam sint iure sapiente quibusdam iste beatae accusantium recusandae.
+          </p>
+          <div class="mt-4 d-flex gap-2 justify-content-center justify-content-md-start">
+            <a href="#" class="btn btn-primary">About Us</a>
+            <a href="#" class="btn btn-outline-primary">Let's Start</a>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="col d-flex justify-content-center justify-content-lg-end">
+          <img src="asset/img/hero.png" alt="Hero Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About us -->
+   <section id="about">
+    <div class="container">
+        <div class="about row">
+            <div class="col text-center">
+                <h1 class="fw-bold mb-4 text-primary">Tentang kami</h1>
+                <p class="lh-lg mb-5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia tempore veniam incidunt fugiat dignissimos omnis? Maiores, nulla facere sunt commodi excepturi quisquam hic cum aut? Quisquam adipisci similique ipsa dignissimos?
+                </p>
+                <img src="asset/img/about.png" alt="">
             </div>
         </div>
-        </nav>
-        <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </div>
+   </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

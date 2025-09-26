@@ -1,5 +1,71 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1{
+
+/* Global  */
+h1 {
     font-family: "Montserrat", sans-serif;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+/*  Hero Section */
+.hero .col img {
+    width: 500px;
+}
+
+.hero .col p {
+    width: 500px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+/* about */
+.about .col img{
+    width: 600px;
+}
+
+
+/*  Responsive  */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero .col img {
+        width: 400px;
+    }
+    .hero .col p {
+        width: 300px;
+        font-size: 14px; 
+    }
+}
+
+/* HP */
+@media (max-width: 992px) {
+    #hero {
+        padding-top: 50px;
+    }
+    .hero .col img {
+        width: 300px;
+    }
+    .hero .col p {
+        width: 100%;
+    }
+    .about .col img{
+    width: 400px;
+}
+
+}
+
+/* Desktop Medium  */
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .hero .col img {
+        width: 450px;
+    }
+    .hero .col p {
+        width: 400px;
+    }
 }
