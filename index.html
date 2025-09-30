@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,8 @@
 
   <link rel="shortcut icon" href="https://idn-static-assets.s3-ap-southeast-1.amazonaws.com/school/10347.png" type="image/x-icon">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -29,13 +29,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-primary" aria-current="page" href="#">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Features</a>
+            <a class="nav-link text-primary" href="#about">Tentang</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Pricing</a>
+            <a class="nav-link text-primary" href="#service">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#recent">Laporan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#faq">FAQ</a>
           </li>
         </ul>
       </div>
@@ -52,14 +58,14 @@
           <h1 class="fw-bold">
             Selamat Datang <br>
             di Aplikasi <span class="text-primary">IDN E-Report 2025</span> <br>
-            Forum Pengaduan
+            Forum Pengaduan Online
           </h1>
           <p class="lh-lg mt-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio beatae veritatis aliquid nemo nobis. Mollitia repellat magnam sint iure sapiente quibusdam iste beatae accusantium recusandae.
+            Aplikasi ini memudahkan siswa, guru, maupun orang tua untuk melaporkan keluhan terkait akademik maupun non-akademik secara cepat dan transparan.
           </p>
           <div class="mt-4 d-flex gap-2 justify-content-center justify-content-md-start">
-            <a href="#" class="btn btn-primary">About Us</a>
-            <a href="#" class="btn btn-outline-primary">Let's Start</a>
+            <a href="#about" class="btn btn-primary">Tentang Kami</a>
+            <a href="#service" class="btn btn-outline-primary">Mulai Sekarang</a>
           </div>
         </div>
 
@@ -72,110 +78,205 @@
   </section>
 
   <!-- About us -->
-   <section id="about">
+  <section id="about" class="py-5">
     <div class="container">
-        <div class="about row">
-            <div class="col text-center">
-                <h1 class="fw-bold mb-4 text-primary">Tentang kami</h1>
-                <p class="lh-lg mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia tempore veniam incidunt fugiat dignissimos omnis? Maiores, nulla facere sunt commodi excepturi quisquam hic cum aut? Quisquam adipisci similique ipsa dignissimos?
-                </p>
-                <img src="asset/img/about.png" alt="">
-            </div>
-        </div>
-    </div>
-   </section>
-
-   <!-- Services -->
-  <section id="service">
-    <div class="container">
-      <div class="mb-5 text-center">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      
-      <div class="service row gap-3 p-2">
-        <div class="col p-4 shadow bg-primary text-primary-emphasis rounded-3">
-          <i class="fa-solid fa-graduation-cap mb-3"></i>
-          <h4 class="mb-3 fw-bold">Pengaduan Akademik</h4>
-          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, excepturi!</p>
-        </div>
-        <div class="col p-4 shadow bg-primary text-primary-emphasis rounded-3">
-          <i class="fa-solid fa-graduation-cap mb-3"></i>
-          <h4 class="mb-3 fw-bold">Pengaduan Akademik</h4>
-          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, excepturi!</p>
-        </div>
-        <div class="col p-4 shadow bg-primary text-primary-emphasis rounded-3">
-          <i class="fa-solid fa-graduation-cap mb-3"></i>
-          <h4 class="mb-3 fw-bold">Pengaduan Akademik</h4>
-          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, excepturi!</p>
+      <div class="about row">
+        <div class="col text-center">
+          <h1 class="fw-bold mb-4 text-primary">Tentang Kami</h1>
+          <p class="lh-lg mb-5">
+            IDN E-Report merupakan platform pengaduan resmi yang bertujuan meningkatkan komunikasi, transparansi, serta penyelesaian masalah di lingkungan sekolah. Setiap laporan akan diterima, diproses, dan ditindaklanjuti oleh pihak terkait.
+          </p>
+          <img src="asset/img/about.png" alt="About Image" class="img-fluid">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- recent -->
-    <section id="recent">
-      <div class="container">
+  <!-- Services -->
+  <section id="service" class="py-5 bg-light">
+    <div class="container">
+      <div class="mb-5 text-center">
+        <h1 class="fw-bold text-primary">Layanan</h1>
+        <p>Beberapa layanan pengaduan yang tersedia di aplikasi ini:</p>
+      </div>
+      
+      <div class="service row gap-3 p-2">
+        <div class="col p-4 shadow bg-white rounded-3">
+          <i class="fa-solid fa-book mb-3 fs-3 text-primary"></i>
+          <h4 class="mb-3 fw-bold">Pengaduan Akademik</h4>
+          <p class="lh-lg">Laporkan permasalahan terkait pembelajaran, ujian, maupun kegiatan akademik lainnya.</p>
+        </div>
+        <div class="col p-4 shadow bg-white rounded-3">
+          <i class="fa-solid fa-building mb-3 fs-3 text-primary"></i>
+          <h4 class="mb-3 fw-bold">Pengaduan Fasilitas</h4>
+          <p class="lh-lg">Sampaikan kendala mengenai sarana dan prasarana sekolah seperti ruang kelas, laboratorium, atau peralatan.</p>
+        </div>
+        <div class="col p-4 shadow bg-white rounded-3">
+          <i class="fa-solid fa-user-shield mb-3 fs-3 text-primary"></i>
+          <h4 class="mb-3 fw-bold">Pengaduan Non-Akademik</h4>
+          <p class="lh-lg">Laporan terkait lingkungan sekolah, kedisiplinan, maupun permasalahan sosial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Title -->
-        <div class="text-center mb-5">
-          <h1>Recent Report</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, porro!</p>
+  <!-- Recent Report -->
+  <section id="recent" class="py-5">
+    <div class="container">
+
+      <!-- Title -->
+      <div class="text-center mb-5">
+        <h1 class="fw-bold text-primary">Laporan Terbaru</h1>
+        <p>Beberapa laporan yang baru saja masuk:</p>
+      </div>
+
+      <!-- Recent -->
+      <div class="service row">
+
+        <!-- Item -->
+        <div class="col-lg-4 mb-3">
+          <div class="card position-relative">
+            <div class="position-absolute px-3 py-2 bg-dark bg-opacity-50 text-white" style="top: 10px; left: 10px;">
+              <a href="#" class="text-decoration-none text-white">Akademik</a>
+            </div>
+            <img src="https://picsum.photos/500/400?random=1" class="card-img-top" alt="foto recent">
+            <div class="card-body">
+              <h5 class="card-title">Keterlambatan Nilai</h5>
+              <p class="mb-2"><small>By: <a class="text-decoration-none" href="#">Admin</a> · 1 jam lalu</small></p>
+              <p class="card-text">Laporan terkait keterlambatan input nilai ujian semester.</p>
+              <a href="#" class="btn btn-primary">Detail</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Cards -->
-        <div class="service row">
+        <div class="col-lg-4 mb-3">
+          <div class="card position-relative">
+            <div class="position-absolute px-3 py-2 bg-dark bg-opacity-50 text-white" style="top: 10px; left: 10px;">
+              <a href="#" class="text-decoration-none text-white">Fasilitas</a>
+            </div>
+            <img src="https://picsum.photos/500/400?random=2" class="card-img-top" alt="foto recent">
+            <div class="card-body">
+              <h5 class="card-title">Proyektor Rusak</h5>
+              <p class="mb-2"><small>By: <a class="text-decoration-none" href="#">Budi</a> · 3 jam lalu</small></p>
+              <p class="card-text">Proyektor di ruang kelas XI RPL tidak berfungsi saat digunakan presentasi.</p>
+              <a href="#" class="btn btn-primary">Detail</a>
+            </div>
+          </div>
+        </div>
 
-          <!-- Card Item -->
-          <div class="col-lg-4 mb-3">
-            <div class="card position-relative">
+        <div class="col-lg-4 mb-3">
+          <div class="card position-relative">
+            <div class="position-absolute px-3 py-2 bg-dark bg-opacity-50 text-white" style="top: 10px; left: 10px;">
+              <a href="#" class="text-decoration-none text-white">Non-Akademik</a>
+            </div>
+            <img src="https://picsum.photos/500/400?random=3" class="card-img-top" alt="foto recent">
+            <div class="card-body">
+              <h5 class="card-title">Kebersihan Kelas</h5>
+              <p class="mb-2"><small>By: <a class="text-decoration-none" href="#">Siti</a> · 5 jam lalu</small></p>
+              <p class="card-text">Kelas XI DKV melaporkan kebersihan ruangan yang kurang terjaga.</p>
+              <a href="#" class="btn btn-primary">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Link More -->
+      <div class="text-center mt-3">
+        <a href="#" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover">
+          Lihat lebih banyak <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-              <!-- Category Label -->
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4); top: 10px; left: 10px;">
-                <a href="#" class="text-decoration-none text-white">Akademik</a>
-              </div>
+  <!-- FAQ -->
+  <section id="faq" class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="fw-bold mb-4 text-primary">FAQ</h1>
+        <p>Pertanyaan yang sering diajukan terkait aplikasi E-Report.</p>
+      </div>
 
-              <!-- Card Image -->
-              <img src="https://picsum.photos/500/400" class="card-img-top" alt="foto recent">
-
-              <!-- Card Body -->
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <!-- Author -->
-                <p class="mb-2">
-                  <small>
-                    By: <a class="text-decoration-none" href="#">John Doe</a> · 2 hours ago
-                  </small>
-                </p>
-
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+      <!-- Accordion -->
+      <div class="accordion pt-4" id="accordionExample">
+        <div class="row row-cols-md-2 row-cols-1 g-4">
+          
+          <!-- FAQ Item 1 -->
+          <div class="col">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-primary text-white" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true">
+                  Bagaimana cara membuat laporan?
+                </button>
+              </h2>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Klik tombol <b>"Mulai Sekarang"</b> di halaman utama, isi formulir laporan sesuai kategori, lalu kirim.
+                </div>
               </div>
             </div>
           </div>
-          <!-- End Card Item -->
 
-          <!-- Tambahin card lain di sini copy aja blok atas -->
+          <!-- FAQ Item 2 -->
+          <div class="col">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-primary text-white collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                  Apakah laporan saya akan dirahasiakan?
+                </button>
+              </h2>
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Ya, setiap laporan akan dijaga kerahasiaannya dan hanya dapat diakses oleh pihak yang berwenang.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="col">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-primary text-white collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#faqThree">
+                  Berapa lama laporan akan diproses?
+                </button>
+              </h2>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Laporan akan diproses maksimal dalam waktu <b>3x24 jam</b> setelah diterima.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="col">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-primary text-white collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#faqFour">
+                  Siapa yang bisa menggunakan aplikasi ini?
+                </button>
+              </h2>
+              <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Aplikasi ini dapat digunakan oleh seluruh warga sekolah: siswa, guru, staf, maupun orang tua.
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
-
-        <!-- Link More -->
-        <div class="text-center mt-3">
-          <a href="#" 
-            class="link-offset-2 link-offset-3-hover link-underline 
-                    link-underline-opacity-0 link-underline-opacity-75-hover">
-            Lihat lebih banyak <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-        
       </div>
-    </section>
-
-
+      <!-- End Accordion -->
+    </div>
+  </section>
+  <!-- FAQ End -->
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
