@@ -30,7 +30,7 @@ section {
 }
 
 
-/*  Responsive  */
+    /*  Responsive  */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -59,6 +59,33 @@ section {
 }
 
 }
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+.footer-link {
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107; /* kuning (Bootstrap warning) */
+  padding-left: 5px;
+}
+
+.copyright {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.hero .col:nth-child(1){
+    --animate-delay: 0.5s;
+}
+
+
 
 /* Desktop Medium  */
 @media (min-width: 1025px) and (max-width: 1199px) {
