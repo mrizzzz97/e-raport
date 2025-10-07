@@ -62,11 +62,18 @@
    <section id="reports">
         <div class="container">
             <!-- judul -->
-            <div class="text-center">
-                <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="500">All Report</h1>
-                <p class="lh-lg text-secondary" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sed dolore delectus eum doloremque quisquam! Aliquam dignissimos ipsum accusamus eos!</p>
-            </div>
-
+             <div class="d-flex justify-content-md-between  align-items-center flex-wrap mb-5">
+              <div class="col-md-8 text-center text-md-start">
+                  <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="500">All Report</h1>
+                  <p class="lh-lg text-secondary" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sed dolore delectus eum doloremque quisquam! Aliquam dignissimos ipsum accusamus eos!</p>
+              </div>
+              <div>
+                <button class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#addModal">
+                  <i class="fa-solid fa-plus me-3"></i>
+                  Tambah Laporan
+                </button>
+              </div>
+             </div>
             <!-- Filter -->
             <div class="row mb-4 g-2 align-items-center">
                 <div class="col-md-4">
@@ -206,9 +213,71 @@
 
     </section>    
     <!-- End Reports -->
-
-
   <!-- All Reports end-->
+
+  <!-- Modal -->
+    <!-- Modal Tambah Laporan -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          
+          <!-- Header -->
+          <div class="modal-header bg-primary text-white">
+            <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">
+              <i class="fa-solid fa-pen-to-square me-2"></i>
+              Tambah Laporan Baru
+            </h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Form -->
+          <form action="" method="post" enctype="multipart/form-data">
+            <div class="modal-body p-4">
+              
+              <!-- Judul Laporan -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="judul">Judul Laporan</label>
+                <input class="form-control" type="text" id="judul" name="judul" placeholder="Masukkan judul laporan..">
+              </div>
+
+              <!-- Kategori -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="kategori">Kategori</label>
+                <select class="form-select" id="kategori" name="kategori">
+                  <option value="">Pilih Kategori</option>
+                  <option value="akademik">Akademik</option>
+                  <option value="fasilitas">Fasilitas</option>
+                  <option value="anonymous">Anonymous</option>
+                </select>
+              </div>
+
+              <!-- Deskripsi -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="deskripsi">Deskripsi Laporan</label>
+                <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" placeholder="Tulis laporan anda..."></textarea>
+              </div>
+
+              <!-- Upload Foto -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="foto">Upload Foto</label>
+                <input class="form-control" type="file" id="foto" name="foto" accept="image/*">
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane me-1"></i> Kirim Laporan
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  <!-- Modal end -->
 
 
   <!-- footer -->
